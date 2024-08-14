@@ -1,0 +1,47 @@
+/* Remove all margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Set a consistent baseline font size and family */
+html {
+    font-size: 100%; /* 16px */
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+}
+/* Remove borders and backgrounds on all elements */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, form, fieldset, input, textarea, button, ul, ol, li, table, th, td {
+    border: 0;
+    background: none;
+}
+/* Remove the list styling from unordered and ordered lists */
+ul, ol {
+    list-style: none;
+}
+/* Remove underline from links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* Reset images, videos, and embeds to be block-level and fluid */
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* Ensure form elements inherit font styles */
+input, textarea, select, button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+/* Reset table elements */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* Remove outline for better styling control (re-add focus styles as needed) */
+:focus {
+    outline: none;
+}
