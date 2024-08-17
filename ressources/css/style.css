@@ -258,7 +258,7 @@ footer img {
 }
 
 
-@media (max-width: 1125px) {
+@media only screen and (max-width: 1125px) {
     body {
         width: 600px;
     }
@@ -342,5 +342,13 @@ footer img {
 
     footer div:first-child {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 380px)
+{
+    body
+    {
+        width: 360px;
     }
 }
