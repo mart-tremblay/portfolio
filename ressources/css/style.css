@@ -497,10 +497,6 @@ footer img {
         padding: 0;
     }
 
-    .header-right p br {
-        display: none;
-    }
-
     .header-left
     {
         display: flex;
@@ -565,7 +561,14 @@ footer img {
         width: 90%;
         margin: 0 auto;
         padding: 1rem;
+        transition: none;
     }
+
+    article img:hover {
+        transform: none;
+    }
+
+
 
     footer {
         justify-content: center;
