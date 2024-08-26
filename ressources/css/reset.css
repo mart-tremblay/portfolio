@@ -6,7 +6,8 @@
 }
 /* Set a consistent baseline font size and family */
 html {
-    font-size: 100%; /* 16px */
+    /*font-size: 100%; !* 16px *!*/
+    font-size: calc(15px + 0.390625vw);
     line-height: 1.5;
     font-family: Arial, sans-serif;
 }
