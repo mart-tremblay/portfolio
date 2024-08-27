@@ -376,7 +376,7 @@ footer img {
 /*endregion*/
 
 /*region Resolution (375-679) */
-@media only screen and (max-width: 649px)
+@media only screen and (min-width: 375px) and (max-width: 649px)
 {
     body {
         width: 100%;
@@ -496,7 +496,7 @@ footer img {
     }
 
     footer p {
-        font-size: 1em;
+        font-size: 0.90em;
     }
 
     footer div:first-child {
