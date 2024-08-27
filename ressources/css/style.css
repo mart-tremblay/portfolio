@@ -236,7 +236,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     background-color: black;
-    height: 230px;
+    height: 175px;
     /*border: 2px solid black;*/
     color: white;
 }
@@ -253,6 +253,10 @@ footer h1, p
 
 footer div:first-child {
     border-right: 5px solid white;
+}
+
+footer div:first-child h1 {
+    font-style: italic;
 }
 
 footer div:last-child {
@@ -360,11 +364,13 @@ footer img {
     }
 
     footer div:first-child {
-        display: none;
+        /*display: none;*/
+        border: none;
     }
 
-    footer div:last-child {
-        width: 100%;
+    footer div:last-child h1 {
+        /*width: 100%;*/
+        font-size: 1.5rem;
     }
 }
 /*endregion*/
@@ -396,7 +402,7 @@ footer img {
 
     .header-nav ul {
         justify-content: center;
-        padding: 0;
+        padding: 0 0.25rem;
     }
     .circle-container, .circle, .full-little-circle, .right-circle-container, .little-circle, .right-circle, .right-bottom-circle {
         display: none;
@@ -487,6 +493,10 @@ footer img {
 
     footer h1 {
         font-size: 1.5rem;
+    }
+
+    footer p {
+        font-size: 1em;
     }
 
     footer div:first-child {
