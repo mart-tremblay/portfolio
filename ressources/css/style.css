@@ -2,20 +2,19 @@
 
 /*region Regular resolution*/
 html {
-    font-size: calc(15px + 0.390625vw);
+
 }
 
 body {
     max-width: 1200px;
     margin: 0 auto;
-
 }
 
 header {
     background-color: rgba(255, 255, 242, 0.8);
 }
 
-header, article {
+header {
     height: 700px;
 }
 
@@ -25,19 +24,23 @@ header, article {
     display: flex;
     flex-wrap: wrap;
     /*flex: 1 1 50%;*/
-    /*align-items: center;*/
-    padding: 3rem 4rem;
+    align-items: center;
+    padding: 0 4rem;
 }
 
 .header-nav>div {
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 50%;
-
 }
 
 .header-nav h1 {
     font-size: 2rem;
+}
+
+.header-nav h1, .header-nav p {
+    padding: 0;
 }
 
 .header-nav ul {
@@ -48,7 +51,6 @@ header, article {
 .header-nav li {
     padding: 0 2rem;
     font-size: 1.25rem;
-
 }
 
 .header-content {
@@ -68,28 +70,26 @@ header, article {
 }
 
 .header-left img {
-    width: 70%;
+    width: 60%;
     position: absolute;
     left: 7rem;
     top: 5rem;
     z-index: 10;
 }
 
-.header-right {
-    /*justify-content: center;*/
+.header-right h1, .header-right p {
+    padding-left: 3rem;
 }
 
 .header-right h1 {
     font-size: 4.5rem;
-    padding-top: 1.5rem;
+    padding-top: 2rem;
     padding-bottom: 1rem;
-    padding-left: 3rem;
 }
 
 .header-right p {
     font-size: 1.5rem;
     padding-bottom: 1.5rem;
-    padding-left: 3rem;
 }
 
 .full-little-circle {
@@ -106,10 +106,8 @@ header, article {
 }
 
 .little-circle {
-    /*width: 4rem;*/
-    /*height: 4rem;*/
-    width: 100%;
-    height: 100%;
+    width: 4rem;
+    height: 4rem;
     background-color: green;
     border-radius: 50%;
     position: absolute;
@@ -129,10 +127,8 @@ header, article {
 }
 
 .circle {
-    /*width: 20rem;*/
-    /*height: 20rem;*/
-    width: 100%;
-    height: 100%;
+    width: 18rem;
+    height: 18rem;
     background-color: green;
     border-radius: 50%;
     position: absolute;
@@ -154,10 +150,8 @@ header, article {
 }
 
 .right-circle {
-    /*width: 12rem;*/
-    /*height: 12rem;*/
-    width: 100%;
-    height: 100%;
+    width: 12rem;
+    height: 12rem;
     background-color: green;
     border-radius: 50%;
     position: absolute;
@@ -167,22 +161,21 @@ header, article {
 
 #projects h1 {
     font-size: 3rem;
-    padding: 3rem 0 0 4rem;
+    /*text-decoration: underline;*/
+    padding: 2rem 0 1rem 4rem;
 }
 
 #projects li>h2 {
     font-size: 2rem;
-    /*padding-bottom: 0.5rem;*/
-    padding: 0;
+    padding-bottom: 0.5rem;
 }
 
 #projects p {
     padding-bottom: 0.5rem;
 }
 
-#projects li:last-child p {
-    padding-bottom: 3rem;
-    /*background-color: red;*/
+#projects p:last-child {
+    padding-bottom: 1rem;
 }
 
 #projects ul {
@@ -204,21 +197,8 @@ article:nth-of-type(even) {
 
 article:not(:first-child) {
     display: grid;
-    grid-template-columns: 30% 70%;
-    /*align-items: center;*/
-}
-
-article div:first-child {
-    display: flex;
-    justify-content: center;
+    grid-template-columns: 25% 75%;
     align-items: center;
-}
-
-article div:first-child h2 {
-    font-size: 2rem;
-    /*width: 100%;*/
-    padding: 0;
-    /*border-right: 5px solid black;*/
 }
 
 article div {
@@ -241,7 +221,7 @@ article div h2 {
 }
 
 article img {
-    width: 90%;
+    width: 75%;;
     margin: 0 auto;
     transition: transform 0.3s ease;
     padding: 1rem;
@@ -295,94 +275,6 @@ footer img {
     body {
         width: 980px;
     }
-
-    article {
-        height: auto;
-    }
-
-    .header-nav {
-        /*padding: 0;*/
-    }
-
-    .header-nav h1 {
-        padding: 0;
-        text-align: center;
-    }
-
-    .header-nav>div {
-
-    }
-
-    .circle-container .circle, .full-little-circle, .right-circle-container .little-circle, .right-circle {
-        /*display: none;*/
-    }
-
-    .header-content {
-        display: flex;
-        flex-direction: row;
-
-    }
-
-    .header-right {
-        width: 70%;
-    }
-
-    .header-left
-    {
-        position: relative;
-    }
-
-    .header-left img {
-        width: 100%;
-        position: relative;
-        left: 3rem;
-        top: 9.5rem;
-        /*border: solid 8px green;*/
-        border-radius: 50%;
-    }
-
-    #projects {
-        height: auto;
-    }
-
-    #projects h1, #projects h2 {
-        text-align: center;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    #projects ul {
-        padding: 1rem;
-    }
-
-    article:not(:first-child) {
-        display: flex;
-        flex-flow: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    article div h2 {
-        padding-left: 0;
-    }
-
-    article img {
-        width: 90%;
-        margin: 0 auto;
-        /*border: 1px solid black;*/
-        padding: 1rem;
-    }
-
-    footer {
-        justify-content: center;
-    }
-    footer div {
-        width: 500px;
-    }
-
-    footer div:first-child {
-        display: none;
-    }
 }
 /*endregion*/
 
@@ -393,103 +285,100 @@ footer img {
         width: 650px;
     }
 
-    .header-nav {
-        padding: 0;
-    }
-
     .header-nav h1 {
-        padding-top: 2rem;
-        text-align: center;
+        font-size: 1.5rem;
     }
 
-    .header-nav>div {
-        width: 650px;
-        justify-content: center;
+    .header-nav div {
+        width: 100%;
     }
 
-    .header-nav ul {
-        justify-content: center;
+    .header-left, .header-right {
+        display: flex;
+        flex-direction: column;
+        /*justify-content: center;*/
         padding: 0;
     }
-    .circle-container .circle, .full-little-circle, .right-circle-container .little-circle, .right-circle {
-        display: none;
+
+    .header-right h1 {
+        font-size: 2.25rem;
+        padding-top: 1.5rem;
+        padding-bottom: 0;
     }
 
-    .header-content {
-        display: flex;
-        flex-direction: row;
+    .header-right p {
+        font-size: 1rem;
+        padding-bottom: 0.5rem;
     }
 
-    .header-left
-    {
-        position: relative;
+    .circle {
+        width: 15rem;
+        height: 15rem;
     }
 
-    .header-left img {
-        width: 100%;
-        position: relative;
-        left: 3rem;
-        top: 9.5rem;
-        border: solid 8px green;
-        border-radius: 50%;
-    }
-
-    #projects {
-        height: auto;
+    header {
+        height: 425px;
     }
 
     #projects h1 {
-        padding: 1rem 0 0 1rem;
-    }
-
-    #projects h2 {
-        padding: 1rem 0 0 0;
-        text-align: center;
+        font-size: 2.5rem;
+        padding-top: 1rem;
     }
 
     #projects ul {
-        padding: 0 1.5rem;
+        margin: 0 auto;
+        padding: 0 4rem;
     }
 
     article:not(:first-child) {
         display: flex;
-        flex-flow: wrap;
+        flex-flow: row wrap;
         justify-content: center;
-        align-items: center;
     }
 
     article div h2 {
+        padding-top: 1rem;
         padding-left: 0;
-        /*font-size: 2.5rem;*/
+        text-align: center;
+    }
+
+    article a {
+        display: block;
+        padding-bottom: 1rem;
     }
 
     article img {
-        width: 90%;
-        margin: 0 auto;
-        padding: 1rem;
+        width: 100%;
+    }
+
+    article img:hover {
+        transform: scale(1.25);
     }
 
     footer {
-        justify-content: center;
-    }
-    footer div {
-        width: 500px;
+        height: 150px;
     }
 
     footer div:first-child {
         display: none;
     }
+
+    footer div:last-child {
+        width: 100%;
+    }
+
+
 }
 /*endregion*/
 
-/*region Resolution (375-649) */
+/*region Resolution (375-679) */
 @media only screen and (min-width: 375px) and (max-width: 649px)
 {
     body {
         width: 375px;
     }
 
-    article {
+    header {
         height: auto;
     }
     .header-nav {
@@ -505,7 +394,6 @@ footer img {
 
     .header-nav>div {
         width: 375px;
-        justify-content: center;
     }
 
     .header-nav ul {
@@ -556,70 +444,61 @@ footer img {
         border-radius: 50%;
     }
 
-    .header-right {
-        margin: 0 auto;
-        /*display: none;*/
-    }
     .header-right h1 {
-        font-size: 2.75rem;
         padding: 0;
         text-align: center;
-    }
-
-    #projects {
-        height: auto;
+        font-size: 3rem;
+        /*padding-top: 2rem;*/
+        /*padding-bottom: 1rem;*/
     }
 
     #projects h1 {
-        padding: 1rem 0 0 1rem;
+        font-size: 2.25rem;
+        padding: 1rem 0 0.5rem 1rem;
     }
 
     #projects h2 {
-        padding: 1rem 0 0 0;
+        font-size: 1.5rem;
         text-align: center;
     }
 
     #projects ul {
-        padding: 0 1.5rem;
+        padding: 0 1rem;
     }
 
     article:not(:first-child) {
-        display: flex;
-        flex-flow: wrap;
+        display:flex;
+        flex-direction: column;
         justify-content: center;
-        /*align-items: center;*/
+        align-items: center;
+        padding: 0;
     }
 
     article div h2 {
         padding: 0;
-        font-size: 2rem;
+        text-align: center;
     }
 
     article img {
-        width: 90%;
-        margin: 0 auto;
-        padding: 1rem;
-        transition: none;
-    }
-
-    article img:hover {
-        transform: none;
+        width: 100%;
     }
 
     footer {
-        justify-content: center;
         height: 150px;
     }
-    footer div {
-        width: 500px;
+
+    footer h1 {
+        font-size: 1.5rem;
     }
 
     footer div:first-child {
         display: none;
     }
 
-    footer h1 {
-        font-size: 1.5rem;
+    footer div:last-child {
+        width: 100%;
     }
+
+
 }
 /*endregion*/
