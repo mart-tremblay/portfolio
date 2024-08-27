@@ -15,7 +15,7 @@ header {
     background-color: rgba(255, 255, 242, 0.8);
 }
 
-header {
+header, article {
     height: 700px;
 }
 
@@ -30,6 +30,8 @@ header {
 }
 
 .header-nav>div {
+    display: flex;
+    align-items: center;
     width: 50%;
 
 }
@@ -73,9 +75,13 @@ header {
     z-index: 10;
 }
 
+.header-right {
+    /*justify-content: center;*/
+}
+
 .header-right h1 {
     font-size: 4.5rem;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     padding-bottom: 1rem;
     padding-left: 3rem;
 }
@@ -100,8 +106,10 @@ header {
 }
 
 .little-circle {
-    width: 4rem;
-    height: 4rem;
+    /*width: 4rem;*/
+    /*height: 4rem;*/
+    width: 100%;
+    height: 100%;
     background-color: green;
     border-radius: 50%;
     position: absolute;
@@ -121,8 +129,10 @@ header {
 }
 
 .circle {
-    width: 20rem;
-    height: 20rem;
+    /*width: 20rem;*/
+    /*height: 20rem;*/
+    width: 100%;
+    height: 100%;
     background-color: green;
     border-radius: 50%;
     position: absolute;
@@ -144,8 +154,10 @@ header {
 }
 
 .right-circle {
-    width: 12rem;
-    height: 12rem;
+    /*width: 12rem;*/
+    /*height: 12rem;*/
+    width: 100%;
+    height: 100%;
     background-color: green;
     border-radius: 50%;
     position: absolute;
@@ -155,17 +167,22 @@ header {
 
 #projects h1 {
     font-size: 3rem;
-    /*text-decoration: underline;*/
-    padding: 2rem 0 1rem 4rem;
+    padding: 3rem 0 0 4rem;
 }
 
 #projects li>h2 {
     font-size: 2rem;
-    padding-bottom: 0.5rem;
+    /*padding-bottom: 0.5rem;*/
+    padding: 0;
 }
 
 #projects p {
     padding-bottom: 0.5rem;
+}
+
+#projects li:last-child p {
+    padding-bottom: 3rem;
+    /*background-color: red;*/
 }
 
 #projects ul {
@@ -187,8 +204,21 @@ article:nth-of-type(even) {
 
 article:not(:first-child) {
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 30% 70%;
+    /*align-items: center;*/
+}
+
+article div:first-child {
+    display: flex;
+    justify-content: center;
     align-items: center;
+}
+
+article div:first-child h2 {
+    font-size: 2rem;
+    /*width: 100%;*/
+    padding: 0;
+    /*border-right: 5px solid black;*/
 }
 
 article div {
@@ -211,7 +241,7 @@ article div h2 {
 }
 
 article img {
-    width: 75%;;
+    width: 90%;
     margin: 0 auto;
     transition: transform 0.3s ease;
     padding: 1rem;
@@ -266,6 +296,10 @@ footer img {
         width: 980px;
     }
 
+    article {
+        height: auto;
+    }
+
     .header-nav {
         /*padding: 0;*/
     }
@@ -280,7 +314,7 @@ footer img {
     }
 
     .circle-container .circle, .full-little-circle, .right-circle-container .little-circle, .right-circle {
-        display: none;
+        /*display: none;*/
     }
 
     .header-content {
@@ -303,7 +337,7 @@ footer img {
         position: relative;
         left: 3rem;
         top: 9.5rem;
-        border: solid 8px green;
+        /*border: solid 8px green;*/
         border-radius: 50%;
     }
 
@@ -361,7 +395,6 @@ footer img {
 
     .header-nav {
         padding: 0;
-        justify-content: center;
     }
 
     .header-nav h1 {
@@ -371,6 +404,7 @@ footer img {
 
     .header-nav>div {
         width: 650px;
+        justify-content: center;
     }
 
     .header-nav ul {
@@ -448,13 +482,16 @@ footer img {
 }
 /*endregion*/
 
-/*region Resolution (375-679) */
+/*region Resolution (375-649) */
 @media only screen and (min-width: 375px) and (max-width: 649px)
 {
     body {
         width: 375px;
     }
 
+    article {
+        height: auto;
+    }
     .header-nav {
         padding: 0;
         justify-content: center;
@@ -468,6 +505,7 @@ footer img {
 
     .header-nav>div {
         width: 375px;
+        justify-content: center;
     }
 
     .header-nav ul {
@@ -549,12 +587,12 @@ footer img {
         display: flex;
         flex-flow: wrap;
         justify-content: center;
-        align-items: center;
+        /*align-items: center;*/
     }
 
     article div h2 {
-        padding-left: 0;
-        /*font-size: 2.5rem;*/
+        padding: 0;
+        font-size: 2rem;
     }
 
     article img {
@@ -568,10 +606,9 @@ footer img {
         transform: none;
     }
 
-
-
     footer {
         justify-content: center;
+        height: 150px;
     }
     footer div {
         width: 500px;
@@ -579,6 +616,10 @@ footer img {
 
     footer div:first-child {
         display: none;
+    }
+
+    footer h1 {
+        font-size: 1.5rem;
     }
 }
 /*endregion*/
