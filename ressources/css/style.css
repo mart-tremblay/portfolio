@@ -410,6 +410,7 @@ footer img {
         flex-direction: row;
         justify-content: space-between;
         padding: 0 1rem;
+        color: red;
     }
 
     .header-nav li {
