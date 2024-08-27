@@ -386,8 +386,9 @@ footer img {
         height: auto;
     }
     .header-nav {
+        display: block;
         padding: 0;
-        justify-content: center;
+        /*justify-content: center;*/
     }
 
     .header-nav h1 {
@@ -399,11 +400,23 @@ footer img {
     .header-nav>div {
         width: 100%;
     }
+    
+    .header-nav>div:last-child {
+        display: block;
+    }
 
     .header-nav ul {
-        justify-content: center;
-        padding: 0 0.25rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 1rem;
     }
+
+    .header-nav li {
+        display: block;
+        padding: 0;
+    }
+
     .circle-container, .circle, .full-little-circle, .right-circle-container, .little-circle, .right-circle, .right-bottom-circle {
         display: none;
     }
