@@ -304,6 +304,12 @@ footer img {
         padding: 0;
     }
 
+    .header-left img {
+        width: 55%;
+        position: relative;
+        /*left: auto;*/
+        /*top: auto;*/
+    }
     .header-right h1 {
         font-size: 2.25rem;
         padding-top: 1.5rem;
@@ -498,7 +504,11 @@ footer img {
     }
 
     #projects ul {
-        padding: 0 1rem;
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    #projects p {
+        padding-bottom: 1.5rem;
     }
 
     article:not(:first-child) {
